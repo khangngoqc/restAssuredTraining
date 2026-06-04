@@ -1,0 +1,687 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name = "ann">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "anime">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "info">
+<xs:complexType>
+<xs:sequence>
+ </xs:sequence>
+<xs:attribute type="xs:int" name="gid" use="optional"/>
+<xs:attribute type="xs:string" name="type" use="optional"/>
+</xs:complexType>
+</xs:element>
+<xs:element name = "episode">
+<xs:complexType>
+<xs:sequence>
+<xs:element  name = "title">
+<xs:complexType >
+<xs:simpleContent>
+<xs:extension base = "xs:string">
+<xs:attribute type="xs:int" name="gid"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+<xs:attribute type="xs:byte" name="num"/>
+</xs:complexType>
+</xs:element>
+<xs:element  name = "news">
+<xs:complexType >
+<xs:simpleContent>
+<xs:extension base = "xs:string">
+<xs:attribute type="xs:string" name="datetime" use="optional"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+<xs:element name = "staff">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs:string" name = "task"/>
+<xs:element  name = "person">
+<xs:complexType >
+<xs:simpleContent>
+<xs:extension base = "xs:string">
+<xs:attribute type="xs:int" name="id" use="optional"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+<xs:element  name = "person">
+<xs:complexType >
+<xs:simpleContent>
+<xs:extension base = "xs:string">
+<xs:attribute type="xs:int" name="id" use="optional"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+<xs:element  name = "person">
+<xs:complexType >
+<xs:simpleContent>
+<xs:extension base = "xs:string">
+<xs:attribute type="xs:int" name="id" use="optional"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+<xs:attribute type="xs:int" name="gid" use="optional"/>
+</xs:complexType>
+</xs:element>
+<xs:element name = "cast">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = "xs:string" name = "role"/>
+<xs:element  name = "person">
+<xs:complexType >
+<xs:simpleContent>
+<xs:extension base = "xs:string">
+<xs:attribute type="xs:int" name="id" use="optional"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+<xs:element  name = "person">
+<xs:complexType >
+<xs:simpleContent>
+<xs:extension base = "xs:string">
+<xs:attribute type="xs:int" name="id" use="optional"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+<xs:element  name = "person">
+<xs:complexType >
+<xs:simpleContent>
+<xs:extension base = "xs:string">
+<xs:attribute type="xs:int" name="id" use="optional"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+<xs:element  name = "person">
+<xs:complexType >
+<xs:simpleContent>
+<xs:extension base = "xs:string">
+<xs:attribute type="xs:int" name="id" use="optional"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+<xs:element  name = "person">
+<xs:complexType >
+<xs:simpleContent>
+<xs:extension base = "xs:string">
+<xs:attribute type="xs:int" name="id" use="optional"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+<xs:attribute type="xs:int" name="gid" use="optional"/>
+</xs:complexType>
+</xs:element>
+<xs:element  name = "info">
+<xs:complexType >
+<xs:simpleContent>
+<xs:extension base = "xs:date">
+<xs:attribute type="xs:int" name="gid" use="optional"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+<xs:element  name = "info">
+<xs:complexType >
+<xs:simpleContent>
+<xs:extension base = "xs:string">
+<xs:attribute type="xs:int" name="gid"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+<xs:element  name = "news">
+<xs:complexType >
+<xs:simpleContent>
+<xs:extension base = "xs:string">
+<xs:attribute type="xs:string" name="datetime" use="optional"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+<xs:element  name = "news">
+<xs:complexType >
+<xs:simpleContent>
+<xs:extension base = "xs:string">
+<xs:attribute type="xs:string" name="datetime"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+<xs:element name = "staff">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs:string" name = "task"/>
+<xs:element  name = "person">
+<xs:complexType >
+<xs:simpleContent>
+<xs:extension base = "xs:string">
+<xs:attribute type="xs:int" name="id" use="optional"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+<xs:element  name = "person">
+<xs:complexType >
+<xs:simpleContent>
+<xs:extension base = "xs:string">
+<xs:attribute type="xs:int" name="id" use="optional"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+<xs:attribute type="xs:int" name="gid" use="optional"/>
+</xs:complexType>
+</xs:element>
+<xs:element name = "staff">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs:string" name = "task"/>
+<xs:element  name = "person">
+<xs:complexType >
+<xs:simpleContent>
+<xs:extension base = "xs:string">
+<xs:attribute type="xs:int" name="id" use="optional"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+<xs:element  name = "person">
+<xs:complexType >
+<xs:simpleContent>
+<xs:extension base = "xs:string">
+<xs:attribute type="xs:int" name="id"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+<xs:attribute type="xs:int" name="gid" use="optional"/>
+</xs:complexType>
+</xs:element>
+<xs:element name = "staff">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs:string" name = "task"/>
+<xs:element  name = "person">
+<xs:complexType >
+<xs:simpleContent>
+<xs:extension base = "xs:string">
+<xs:attribute type="xs:int" name="id"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+<xs:attribute type="xs:int" name="gid"/>
+</xs:complexType>
+</xs:element>
+<xs:element name = "cast">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs:string" name = "role"/>
+<xs:element  name = "person">
+<xs:complexType >
+<xs:simpleContent>
+<xs:extension base = "xs:string">
+<xs:attribute type="xs:int" name="id" use="optional"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+<xs:element  name = "person">
+<xs:complexType >
+<xs:simpleContent>
+<xs:extension base = "xs:string">
+<xs:attribute type="xs:int" name="id" use="optional"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+<xs:element  name = "person">
+<xs:complexType >
+<xs:simpleContent>
+<xs:extension base = "xs:string">
+<xs:attribute type="xs:int" name="id" use="optional"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+<xs:element  name = "person">
+<xs:complexType >
+<xs:simpleContent>
+<xs:extension base = "xs:string">
+<xs:attribute type="xs:int" name="id" use="optional"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+<xs:attribute type="xs:int" name="gid" use="optional"/>
+</xs:complexType>
+</xs:element>
+<xs:element name = "cast">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs:string" name = "role"/>
+<xs:element  name = "person">
+<xs:complexType >
+<xs:simpleContent>
+<xs:extension base = "xs:string">
+<xs:attribute type="xs:int" name="id" use="optional"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+<xs:element  name = "person">
+<xs:complexType >
+<xs:simpleContent>
+<xs:extension base = "xs:string">
+<xs:attribute type="xs:int" name="id" use="optional"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+<xs:element  name = "person">
+<xs:complexType >
+<xs:simpleContent>
+<xs:extension base = "xs:string">
+<xs:attribute type="xs:int" name="id" use="optional"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+<xs:attribute type="xs:int" name="gid" use="optional"/>
+</xs:complexType>
+</xs:element>
+<xs:element name = "cast">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs:string" name = "role"/>
+<xs:element  name = "person">
+<xs:complexType >
+<xs:simpleContent>
+<xs:extension base = "xs:string">
+<xs:attribute type="xs:int" name="id" use="optional"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+<xs:element  name = "person">
+<xs:complexType >
+<xs:simpleContent>
+<xs:extension base = "xs:string">
+<xs:attribute type="xs:int" name="id" use="optional"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+<xs:element  name = "person">
+<xs:complexType >
+<xs:simpleContent>
+<xs:extension base = "xs:string">
+<xs:attribute type="xs:int" name="id"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+<xs:attribute type="xs:int" name="gid" use="optional"/>
+</xs:complexType>
+</xs:element>
+<xs:element name = "cast">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs:string" name = "role"/>
+<xs:element  name = "person">
+<xs:complexType >
+<xs:simpleContent>
+<xs:extension base = "xs:string">
+<xs:attribute type="xs:int" name="id" use="optional"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+<xs:element  name = "person">
+<xs:complexType >
+<xs:simpleContent>
+<xs:extension base = "xs:string">
+<xs:attribute type="xs:int" name="id"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+<xs:attribute type="xs:int" name="gid" use="optional"/>
+</xs:complexType>
+</xs:element>
+<xs:element name = "cast">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs:string" name = "role"/>
+<xs:element  name = "person">
+<xs:complexType >
+<xs:simpleContent>
+<xs:extension base = "xs:string">
+<xs:attribute type="xs:int" name="id" use="optional"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+<xs:attribute type="xs:int" name="gid" use="optional"/>
+</xs:complexType>
+</xs:element>
+<xs:element name = "credit">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs:string" name = "task"/>
+<xs:element  name = "company">
+<xs:complexType >
+<xs:simpleContent>
+<xs:extension base = "xs:string">
+<xs:attribute type="xs:short" name="id" use="optional"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+<xs:attribute type="xs:int" name="gid" use="optional"/>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+<xs:attribute type="xs:short" name="id" use="optional"/>
+</xs:complexType>
+</xs:element>
+<xs:element name = "manga">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "info"  maxOccurs="unbounded" minOccurs="0" >
+<xs:complexType>
+<xs:sequence>
+ </xs:sequence>
+<xs:attribute type="xs:int" name="gid" use="optional"/>
+</xs:complexType>
+</xs:element>
+<xs:element name = "staff"  maxOccurs="unbounded" minOccurs="0" >
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs:string" name = "task"/>
+<xs:element  name = "person">
+<xs:complexType >
+<xs:simpleContent>
+<xs:extension base = "xs:string">
+<xs:attribute type="xs:int" name="id" use="optional"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+<xs:element  name = "person">
+<xs:complexType >
+<xs:simpleContent>
+<xs:extension base = "xs:string">
+<xs:attribute type="xs:int" name="id" use="optional"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+<xs:element  name = "person">
+<xs:complexType >
+<xs:simpleContent>
+<xs:extension base = "xs:string">
+<xs:attribute type="xs:int" name="id" use="optional"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+<xs:element  name = "person">
+<xs:complexType >
+<xs:simpleContent>
+<xs:extension base = "xs:string">
+<xs:attribute type="xs:int" name="id" use="optional"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+<xs:element  name = "person">
+<xs:complexType >
+<xs:simpleContent>
+<xs:extension base = "xs:string">
+<xs:attribute type="xs:int" name="id" use="optional"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+<xs:element  name = "person">
+<xs:complexType >
+<xs:simpleContent>
+<xs:extension base = "xs:string">
+<xs:attribute type="xs:int" name="id"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+<xs:attribute type="xs:int" name="gid" use="optional"/>
+</xs:complexType>
+</xs:element>
+<xs:element  name = "info"  maxOccurs="unbounded" minOccurs="0" >
+<xs:complexType >
+<xs:simpleContent>
+<xs:extension base = "xs:string">
+<xs:attribute type="xs:int" name="gid" use="optional"/>
+<xs:attribute type="xs:string" name="type" use="optional"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+<xs:element  name = "info"  maxOccurs="unbounded" minOccurs="0" >
+<xs:complexType >
+<xs:simpleContent>
+<xs:extension base = "xs:string">
+<xs:attribute type="xs:int" name="gid" use="optional"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+<xs:element name = "staff"  maxOccurs="unbounded" minOccurs="0" >
+<xs:complexType>
+<xs:sequence>
+<xs:element type = "xs:string" name = "task"/>
+<xs:element  name = "person">
+<xs:complexType >
+<xs:simpleContent>
+<xs:extension base = "xs:string">
+<xs:attribute type="xs:int" name="id" use="optional"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+<xs:element  name = "person">
+<xs:complexType >
+<xs:simpleContent>
+<xs:extension base = "xs:string">
+<xs:attribute type="xs:int" name="id" use="optional"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+<xs:element  name = "person">
+<xs:complexType >
+<xs:simpleContent>
+<xs:extension base = "xs:string">
+<xs:attribute type="xs:int" name="id" use="optional"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+<xs:element  name = "person">
+<xs:complexType >
+<xs:simpleContent>
+<xs:extension base = "xs:string">
+<xs:attribute type="xs:int" name="id" use="optional"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+<xs:attribute type="xs:int" name="gid" use="optional"/>
+</xs:complexType>
+</xs:element>
+<xs:element  name = "info"  maxOccurs="unbounded" minOccurs="0" >
+<xs:complexType >
+<xs:simpleContent>
+<xs:extension base = "xs:date">
+<xs:attribute type="xs:int" name="gid" use="optional"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+<xs:element  name = "info"  maxOccurs="unbounded" minOccurs="0" >
+<xs:complexType >
+<xs:simpleContent>
+<xs:extension base = "xs:string">
+<xs:attribute type="xs:int" name="gid" use="optional"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+<xs:element  name = "info"  maxOccurs="unbounded" minOccurs="0" >
+<xs:complexType >
+<xs:simpleContent>
+<xs:extension base = "xs:string">
+<xs:attribute type="xs:int" name="gid"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+<xs:element name = "staff"  maxOccurs="unbounded" minOccurs="0" >
+<xs:complexType>
+<xs:sequence>
+<xs:element type = "xs:string" name = "task"/>
+<xs:element  name = "person">
+<xs:complexType >
+<xs:simpleContent>
+<xs:extension base = "xs:string">
+<xs:attribute type="xs:int" name="id" use="optional"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+<xs:element  name = "person">
+<xs:complexType >
+<xs:simpleContent>
+<xs:extension base = "xs:string">
+<xs:attribute type="xs:int" name="id" use="optional"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+<xs:element  name = "person">
+<xs:complexType >
+<xs:simpleContent>
+<xs:extension base = "xs:string">
+<xs:attribute type="xs:int" name="id"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+<xs:attribute type="xs:int" name="gid" use="optional"/>
+</xs:complexType>
+</xs:element>
+<xs:element name = "staff"  maxOccurs="unbounded" minOccurs="0" >
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs:string" name = "task"/>
+<xs:element  name = "person">
+<xs:complexType >
+<xs:simpleContent>
+<xs:extension base = "xs:string">
+<xs:attribute type="xs:int" name="id" use="optional"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+<xs:element  name = "person">
+<xs:complexType >
+<xs:simpleContent>
+<xs:extension base = "xs:string">
+<xs:attribute type="xs:int" name="id"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+<xs:attribute type="xs:int" name="gid" use="optional"/>
+</xs:complexType>
+</xs:element>
+<xs:element  name = "news">
+<xs:complexType >
+<xs:simpleContent>
+<xs:extension base = "xs:date">
+<xs:attribute type="xs:string" name="datetime" use="optional"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+<xs:element  name = "news">
+<xs:complexType >
+<xs:simpleContent>
+<xs:extension base = "xs:string">
+<xs:attribute type="xs:string" name="datetime" use="optional"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+<xs:element  name = "release">
+<xs:complexType >
+<xs:simpleContent>
+<xs:extension base = "xs:string">
+<xs:attribute type="xs:date" name="date" use="optional"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+<xs:element  name = "news">
+<xs:complexType >
+<xs:simpleContent>
+<xs:extension base = "xs:string">
+<xs:attribute type="xs:string" name="datetime" use="optional"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+<xs:element  name = "release">
+<xs:complexType >
+<xs:simpleContent>
+<xs:extension base = "xs:string">
+<xs:attribute type="xs:date" name="date"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+<xs:attribute type="xs:short" name="id" use="optional"/>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:schema>
