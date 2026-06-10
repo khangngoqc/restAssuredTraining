@@ -112,7 +112,7 @@ public class Authentications {
 		 * given()
 		 * 
 		 * .when() .get(
-		 * "https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid=a65c450a5bc9749d11c8aee7f642f7c9")
+		 * "https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid={API Key}")
 		 * .then() .statusCode(200) .log().all();
 		 */
 		
@@ -121,7 +121,7 @@ public class Authentications {
 		
 			.queryParam("lat", "10.99")
 			.queryParam("lon", "44.34")
-			.queryParam("appid", "a65c450a5bc9749d11c8aee7f642f7c9")
+			.queryParam("appid", "{API Key}")
 			.queryParam("mode", "json")
 			.queryParam("units", "standard")
 			.queryParam("lang", "vi")
